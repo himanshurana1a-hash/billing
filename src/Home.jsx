@@ -279,28 +279,28 @@ function Home() {
 
             <span className='text-blue-700 underline flex justify-end px-18'>View all-</span>
             <div className=' max-w-6xl mx-auto px-4 grid grid-cols-2 gap-6 p-6'>
-                <div className=' rounded-lg p-4 shadow-sm'>
+                <div className=' rounded-lg p-4  hover:bg-gray-200 shadow-sm'>
                     <h2 className='font-semibold text-sm mb-2'>Auto Discount Engine</h2>
                     <p>Automatically suggests the best discount for a customer based on thier purchase history and loyality level .
                         <img src={bgimage} alt="bg-img" />
                     </p>
                 </div>
 
-                <div className=' rounded-lg p-4 shadow-sm'>
+                <div className=' rounded-lg p-4 hover:bg-gray-200 shadow-sm'>
                     <h2 className='font-semibold text-sm mb-2'>Auto Discount Engine</h2>
                     <p> Automatically suggests the best discount for a customer based on their purchase history and loyality level.
                         <img src={bgimage} alt="bg-img" />
                     </p>
                 </div>
 
-                <div className=' rounded-lg p-4 shadow-sm'>
+                <div className=' rounded-lg p-4  hover:bg-gray-200 shadow-sm'>
                     <h2 className='font-semibold text-sm mb-2'>Auto Discount Engine</h2>
                     <p> Automatically suggests the best discount for a customer based on their purchase history and loyality level.
                         <img src={bgimage} alt="bg-img" />
                     </p>
                 </div>
 
-                <div className=' rounded-lg p-4 shadow-sm'>
+                <div className=' rounded-lg p-4  hover:bg-gray-200 shadow-sm'>
                     <h2 className='font-semibold text-sm mb-2 '>Auto Discount Engine</h2>
                     <p> Automatically suggests the best discount for a customer based on their purchase history and loyality level.
                         <img src={bgimage} alt="bg-img" />
@@ -335,7 +335,7 @@ function Home() {
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="md:col-span-2 space-y-6">
                             <div className="grid sm:grid-cols-2 gap-6">
-                                <div className="bg-gray-200 p-6 rounded-xl">
+                                <div className="bg-gray-200 p-6  hover:bg-white rounded-xl">
                                     <img src={rocket} alt="image" />
                                     <h2 className="font-semibold text-lg">Business Growth</h2>
                                     <p className="text-sm text-gray-600 mt-2">
@@ -345,7 +345,7 @@ function Home() {
                                 </div>
 
 
-                                <div className="bg-gray-200 p-6 rounded-xl">
+                                <div className="bg-gray-200 p-6  hover:bg-white rounded-xl">
                                     <img src={rocket} alt="image" />
                                     <h2 className="font-semibold text-lg">Faster Payments</h2>
                                     <p className="text-sm text-gray-600 mt-2">
@@ -356,7 +356,7 @@ function Home() {
 
                             </div>
 
-                            <div className="bg-gray-200 p-6 rounded-xl">
+                            <div className="bg-gray-200 p-6  hover:bg-white rounded-xl">
                                 <img src={rocket} alt="image" />
                                 <h2 className="font-semibold text-lg">Real-Time Inventory</h2>
                                 <p className="text-sm text-gray-600 mt-2">
@@ -371,7 +371,7 @@ function Home() {
                         </div>
 
 
-                        <div className="bg-blue-900 text-white p-6 rounded-xl flex flex-col justify-between">
+                        <div className="bg-blue-900 text-white p-6 rounded-xl  hover:bg-blue-700 flex flex-col justify-between">
                             <div>
                                 <img src={rocket} alt="image" />
                                 <h2 className="text-lg font-semibold">
@@ -419,7 +419,7 @@ function Home() {
 
             <div className="bg-white min-h-screen flex items-center justify-center">
                 <div className='grid md:grid-cols-3 gap-6 p-6 max-w-5xl w-full'>
-                    <div className='bg-white p-6 rounded-xl border'>
+                    <div className='bg-white p-6 rounded-xl  hover:bg-blue-200 border'>
                         <h2 className='font-semibold text-lg'>Basic</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
@@ -448,7 +448,7 @@ function Home() {
 
                         </ul>
                     </div>
-                    <div className='bg-white p-6 rounded-xl border'>
+                    <div className='bg-white p-6 rounded-xl hover:bg-blue-200 border'>
                         <h2 className='font-semibold text-lg'>Premium</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
@@ -477,7 +477,7 @@ function Home() {
 
                         </ul>
                     </div>
-                    <div className='bg-white p-6 rounded-xl border'>
+                    <div className='bg-white p-6 rounded-xl hover:bg-blue-200 border'>
                         <h2 className='font-semibold text-lg'>Cloud Startup</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
@@ -591,27 +591,27 @@ function Home() {
                 </p>
             </div>
 
-            < div className='justify-items-center mt-10' >
+            < div className='justify-items-center  mt-10' >
                 <p className='  text-3xl md:text-5xl font-bold leading-tight '>
                     Frequently Asked Questions<br />
 
                 </p>
-                <div className='border rounded-lg bg-white p-4 mt-6 cursor-pointer'>
+                <div className='border rounded-lg bg-white p-4 mt-6 hover:bg-gray-200 cursor-pointer'>
                     <p className='text-sm text-gray-500 w-2xl mt-2 '>
                         Is the billing software really free to use?
                     </p>
                 </div>
-                <div className='border rounded-lg bg-white p-4 mt-6 cursor-pointer'>
+                <div className='border rounded-lg bg-white p-4 mt-6 hover:bg-gray-200 cursor-pointer'>
                     <p className='text-sm text-gray-500 w-2xl mt-2 '>
                         Is the billing software really free to use?
                     </p>
                 </div>
-                <div className='border rounded-lg bg-white p-4 mt-6 cursor-pointer'>
+                <div className='border rounded-lg bg-white p-4 mt-6 hover:bg-gray-200 cursor-pointer'>
                     <p className='text-sm text-gray-500 w-2xl mt-2 '>
                         Is the billing software really free to use?
                     </p>
                 </div>
-                <div className='border rounded-lg bg-white p-4 mt-6 cursor-pointer'>
+                <div className='border rounded-lg bg-white p-4 mt-6 hover:bg-gray-200 cursor-pointer'>
                     <p className='text-sm text-gray-500 w-2xl  mt-2 '>
                         Is the billing software really free to use?
                     </p>
