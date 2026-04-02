@@ -419,7 +419,7 @@ function Home() {
 
             <div className="bg-white min-h-screen flex items-center justify-center">
                 <div className='grid md:grid-cols-3 gap-6 p-6 max-w-5xl w-full'>
-                    <div className='bg-white p-6 rounded-xl  hover:bg-blue-200 border'>
+                    <div className='bg-white p-6 rounded-xl  hover:bg-blue-100 border'>
                         <h2 className='font-semibold text-lg'>Basic</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
@@ -448,7 +448,7 @@ function Home() {
 
                         </ul>
                     </div>
-                    <div className='bg-white p-6 rounded-xl hover:bg-blue-200 border'>
+                    <div className='bg-white p-6 rounded-xl hover:bg-blue-100 border'>
                         <h2 className='font-semibold text-lg'>Premium</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
@@ -477,7 +477,7 @@ function Home() {
 
                         </ul>
                     </div>
-                    <div className='bg-white p-6 rounded-xl hover:bg-blue-200 border'>
+                    <div className='bg-white p-6 rounded-xl hover:bg-blue-100 border'>
                         <h2 className='font-semibold text-lg'>Cloud Startup</h2>
                         <p className='text-sm text-gray-500'>lorem ipsum is a dummy text used in</p>
                         <h1 className='text-2xl font bold mt-4'>750
