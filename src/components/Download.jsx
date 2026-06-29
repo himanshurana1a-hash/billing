@@ -1,7 +1,7 @@
 import React from 'react'
 import Rectangle from '../assets/Rectangle.png'
-import mackbook from '../assets/Mackbook.png'
-import pccompurt from '../assets/Pccomputer.png'
+import mackbook from '../assets/mackbook.png'
+import pccompurt from '../assets/pccomputer.png'
 function Download() {
   return (
     <>
