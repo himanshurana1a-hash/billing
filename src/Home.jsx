@@ -5,23 +5,12 @@ import invoice from './assets/invoice.png'
 import rocket from './assets/rocket.png'
 import man from './assets/man.png'
 import Rectangle from './assets/Rectangle.png'
-
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
         <div className=" min-h-screen  bg-white">
-            <nav className="flex justify-between items-center px-10 py-4 border-b ">
-                <img src={Frame} alt="logo" />
-                <ul className='hidden md:flex gap-8 text-gray-600 '>
-                    <li>Home</li>
-                    <li>Feature </li>
-                    <li>Pricing</li>
-                    <li>Dowonload</li>
-                    <li>Blog</li>
-                </ul>
-                <button className='bg-blue-500 text-white px-5 py-2 rounded-lg'> Login / Sign up</button>
-
-            </nav>
+            
             <section className='text-center px-6 py-16 md:py-24'>
                 <p className='text-4xl md:text-6xl font-bold leading-tight '>
                     All-In-One Billing That Grow <br />
@@ -45,14 +34,15 @@ function Home() {
 
             </section>
 
-            <div className="min-h-screen bg-gray-100 p-6">
-                <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-md border-4 border-blue-100 flex overflow-hidden">
+            <div className="w-full bg-gray-100 p-4 md:p-6">
 
-                    {/* Sidebar */}
-                    <div className="w-64 bg-gray-50 p-6 border-r">
-                        <h2 className="text-xl font-semibold mb-8">Email Outreach</h2>
+                <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-md border-4 border-blue-100 flex flex-col md:flex-row overflow-hidden">
 
-                        <div className="space-y-6 text-sm">
+                    {/* ✅ Sidebar */}
+                    <div className="w-full md:w-64 bg-gray-50 p-6 border-b md:border-r">
+                        <h2 className="text-lg md:text-xl font-semibold mb-6">Email Outreach</h2>
+
+                        <div className="space-y-6 text-sm md:text-base">
                             <div>
                                 <h3 className="font-semibold text-gray-800 mb-2">Workspace</h3>
                                 <ul className="space-y-2 text-gray-600">
@@ -92,178 +82,130 @@ function Home() {
                         </div>
                     </div>
 
-                    {/* Main Content */}
-                    <div className="flex-1 p-8">
-                        <h1 className="text-2xl font-semibold text-gray-800">Billing</h1>
+                    {/* ✅ Main Content */}
+                    <div className="flex-1 p-4 md:p-8">
+                        <h1 className="text-xl md:text-2xl font-semibold text-gray-800">
+                            Billing
+                        </h1>
+
                         <p className="text-sm text-gray-500 mb-6">
                             Effortlessly handle your billing and invoices right here.
                         </p>
 
-                        {/* Top Cards */}
+                        {/* ✅ Cards */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
                             {/* Plan Summary */}
-                            <div className="border rounded-xl p-5">
-                                <div className="flex justify-between items-center mb-4">
-                                    <h2 className="font-semibold text-gray-800">Current Plan Summary</h2>
-                                    <button className="bg-blue-500 text-white text-sm px-4 py-2 rounded-md">
+                            <div className="border rounded-xl p-4 md:p-5">
+                                <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-3">
+                                    <h2 className="font-semibold text-gray-800">
+                                        Current Plan Summary
+                                    </h2>
+                                    <button className="bg-blue-500 text-white text-sm px-4 py-2 hover:bg-blue-700 rounded-md">
                                         Upgrade
                                     </button>
                                 </div>
 
-                                <div className="grid grid-cols-3 gap-4 text-sm mb-4">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm mb-4">
                                     <div>
                                         <p className="text-gray-400 text-xs">PLAN NAME</p>
                                         <p className="font-medium">Growth Plan</p>
                                     </div>
                                     <div>
-                                        <p className="text-gray-400 text-xs">BILLING CYCLE</p>
+                                        <p className="text-gray-400 text-xs">BILLING</p>
                                         <p className="font-medium">Monthly</p>
                                     </div>
                                     <div>
-                                        <p className="text-gray-400 text-xs">PLAN COST</p>
+                                        <p className="text-gray-400 text-xs">COST</p>
                                         <p className="font-medium">$5698</p>
                                     </div>
                                 </div>
 
                                 <p className="text-xs text-gray-400 mb-1">USAGE</p>
                                 <p className="text-sm text-gray-600 mb-3">
-                                    4850 out of 5k monthly active users
+                                    4850 out of 5k users
                                 </p>
+
                                 <div className="w-full bg-gray-200 h-3 rounded-full">
                                     <div className="bg-blue-500 h-3 rounded-full w-[88%]"></div>
                                 </div>
                             </div>
 
+                            {/* Payment */}
+                            <div className="border rounded-xl p-4 md:p-5">
+                                <h2 className="font-semibold text-gray-800 mb-4">
+                                    Payment Method
+                                </h2>
 
-                            <div className="border rounded-xl p-5">
-                                <h2 className="font-semibold text-gray-800 mb-4">Payment Method</h2>
-                                <div className="border rounded-xl p-4 flex items-center justify-between">
+                                <div className="border rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                     <div className="flex items-center gap-3">
                                         <div className="flex -space-x-2">
                                             <div className="w-6 h-6 bg-red-500 rounded-full"></div>
                                             <div className="w-6 h-6 bg-yellow-400 rounded-full"></div>
                                         </div>
+
                                         <div>
                                             <p className="font-medium text-sm">Master Card</p>
                                             <p className="text-xs text-gray-500">**** **** **** 4002</p>
-                                            <p className="text-xs text-gray-400">Expiry on 20/2024</p>
                                         </div>
                                     </div>
-                                    <button className="border px-3 py-1 rounded-md text-sm text-gray-600">
+
+                                    <button className="border px-3 py-1 hover:bg-green-300 rounded-md text-sm">
                                         Change
                                     </button>
                                 </div>
                             </div>
-
-
                         </div>
 
-
+                        {/* ✅ Table */}
                         <div>
-                            <div className="flex justify-between items-center mb-4">
+                            <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-4 gap-3">
                                 <div>
-                                    <h2 className="text-xl font-semibold text-gray-800">Invoice</h2>
+                                    <h2 className="text-lg md:text-xl font-semibold text-gray-800">
+                                        Invoice
+                                    </h2>
                                     <p className="text-sm text-gray-500">
-                                        Effortlessly handle your billing and invoices right here.
+                                        Manage invoices easily
                                     </p>
                                 </div>
-                                <button className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm">
+
+                                <button className="bg-blue-500 text-white px-4 hover:bg-blue-700 py-2 rounded-md text-sm">
                                     Download
                                 </button>
                             </div>
 
-                            <table className="w-full text-sm">
+                            {/* 🔥 IMPORTANT FIX */}
+                            <div className="overflow-x-auto">
+                                <table className="w-full min-w-100 text-sm">
+                                    <thead>
+                                        <tr className="text-left text-gray-500 border-b">
+                                            <th className="py-2">Invoice ID</th>
+                                            <th>Date</th>
+                                            <th>Plan</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
 
-                                {/* Table Head */}
-                                <thead>
-                                    <tr className="text-left text-gray-500 border-b">
-                                        <th className="py-2">Invoice ID</th>
-                                        <th>Billing Date</th>
-                                        <th>Plan</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
+                                    <tbody className="text-gray-700">
+                                        <tr className="border-b">
+                                            <td>#23456</td>
+                                            <td>23 Jan 2023</td>
+                                            <td>Basic</td>
+                                            <td>$1200</td>
+                                            <td>
+                                                <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
+                                                    Paid
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
-                                {/* Table Body */}
-                                <tbody className="text-gray-700">
-
-                                    <tr className="border-b">
-                                        <td className="py-2">#23456</td>
-                                        <td>23 Jan 2023</td>
-                                        <td>Basic Plan</td>
-                                        <td>$1200</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className="border-b">
-                                        <td className="py-2">#56489</td>
-                                        <td>23 Feb 2023</td>
-                                        <td>Pro Plan</td>
-                                        <td>$7000</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                    <tr className="border-b">
-                                        <td className="py-2">#56489</td>
-                                        <td>23 Mar 2023</td>
-                                        <td>Pro Plan</td>
-                                        <td>$7000</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="py-2">#98380</td>
-                                        <td>23 Apr 2023</td>
-                                        <td>Growth Plan</td>
-                                        <td>$5698</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="py-2">#90394</td>
-                                        <td>23 May 2023</td>
-                                        <td>Basic Plan</td>
-                                        <td>$1200</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="py-2">#929348</td>
-                                        <td>23 Jan 2023</td>
-                                        <td>Growth Plan</td>
-                                        <td>$1200</td>
-                                        <td>
-                                            <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                                                Paid
-                                            </span>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
                         </div>
 
                     </div>
-
                 </div>
             </div>
             <div className='justify-items-center' >
@@ -388,7 +330,7 @@ function Home() {
                                 </p>
                             </div>
 
-                            <button className="mt-6 bg-blue-500 px-4 py-2 rounded-md text-sm">
+                            <button className="mt-6 bg-blue-500 px-4 hover:bg-green-400 py-2 rounded-md text-sm">
                                 Log in / Sign up
                             </button>
                         </div>
@@ -425,7 +367,7 @@ function Home() {
                         <h1 className='text-2xl font bold mt-4'>750
                             <span className='trxt-sm text-gray-500'>/month</span>
                         </h1>
-                        <button className='w-full mt-6 border border-blue-500 text-blue-500 py-2 rounded'>
+                        <button className='w-full mt-6 border border-blue-500 hover:bg-blue-500 text-black py-2 rounded'>
                             Choose plan
                         </button>
                         <p className='text-sm text-gray-500 mt-5'>
@@ -454,7 +396,7 @@ function Home() {
                         <h1 className='text-2xl font bold mt-4'>750
                             <span className='trxt-sm text-gray-500'>/month</span>
                         </h1>
-                        <button className='w-full mt-6 border border-blue-500 text-blue-500 py-2 rounded'>
+                        <button className='w-full mt-6 border border-blue-500 text-black-500 hover:bg-blue-500 py-2 rounded'>
                             Choose plan
                         </button>
                         <p className='text-sm text-gray-500 mt-5'>
@@ -483,7 +425,7 @@ function Home() {
                         <h1 className='text-2xl font bold mt-4'>750
                             <span className='trxt-sm text-gray-500'>/month</span>
                         </h1>
-                        <button className='w-full mt-6 border border-blue-500 text-blue-500 py-2 rounded'>
+                        <button className='w-full mt-6 border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white py-2 rounded'>
                             Choose plan
                         </button>
                         <p className='text-sm text-gray-500 mt-5'>
@@ -653,7 +595,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <footer className='bg-gray-100 text-black-500 '>
+            {/* <footer className='bg-gray-100 text-black-500 '>
                 <div className=' mx-auto px-6 grid md:grid-cols-4 gap-8'>
 
                     <div>
@@ -707,7 +649,7 @@ function Home() {
 
                             <li>Contact Us</li>
                             <li>help & Support</li>
-                            
+
                         </ul>
                     </div>
 
@@ -715,7 +657,7 @@ function Home() {
                 </div>
 
             </footer>
-             <footer className='bg-gray-100 text-black-500 '>
+            <footer className='bg-gray-100 text-black-500 '>
                 <div className=' mx-auto px-6 grid md:grid-cols-4 py-6 gap-8'>
 
                     <div>
@@ -761,7 +703,7 @@ function Home() {
                             <li>Report & Analytics </li>
                             <li>E-invoice</li>
                             <li>Case studt</li>
-                            
+
                         </ul>
                     </div>
                     <div>
@@ -781,7 +723,7 @@ function Home() {
 
                 </div>
 
-            </footer>
+            </footer> */}
 
 
 
